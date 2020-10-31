@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="css/bootstrap.css" rel="stylesheet">
+    <link href="css/style.css" rel="stylesheet">
+    <link href="css/jquery-labelauty.css" rel="stylesheet">
+    <script src="https://kit.fontawesome.com/f31449c14b.js" crossorigin="anonymous"></script>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@200;400;500;600;700&display=swap" rel="stylesheet">
+    <title>Seleccionar documentos para pago</title>
+</head>
+<body style="background-image: url(img/fondo.jpg); background-position: center; background-size: cover; background-repeat: no-repeat;">
+  <nav class="navbar navbar-expand-lg navbar-light bg-light p-2 sticky-top">
+    <a class="navbar-brand" href="#"><img src="img/logo_muysimple-color.svg" width="270"></a>
+    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
+      <div class="navbar-nav ml-auto">
+        <a class="btn btn-primary m-2" href="#">Mis documentos</a>
+        <a class="btn btn-outline-primary m-2" href="#">logout</a>
+      </div>
+    </div>
+  </nav>
+      <div class="container-fluid">
+    <main class="row justify-content-center mt-5" style="height: 90vh;">
+        <div class="col-md-8">
+          <section class="card border-0 bg-transparent align-items-end my-2"><input type="checkbox" data-labelauty="Pagar todo|Pagar todo"></section>
+            <section class="card border-0 bg-white p-2 shadow-sm mt-2" style="opacity: .8;">
+                <div class="card-body">
+                  <ul class="list-group list-group-horizontal-md flex-fill">
+                    <li class="list-group-item text-primary border-top-0 border-bottom-0 border-left-0"><h5>Declaración Jurada de Residencia</h5>Septiembre 2020 20:20 hrs.</li>
+                    <li class="list-group-item text-primary border-top-0 border-bottom-0 border-left-0"><h6>Valor documento</h6>$7000</li>
+                    <li class="list-group-item text-primary border-0"><input type="checkbox" data-labelauty="Pendiente|Pagar" checked><button class="btn btn-outline-primary"><i class="fas fa-trash-alt px-2"></i></button></li>
+                  </ul>
+                </div>
+            </section>
+            <section class="card border-0 bg-white p-2 shadow-sm mt-2" style="opacity: .8;">
+              <div class="card-body">
+                <ul class="list-group list-group-horizontal-md flex-fill">
+                  <li class="list-group-item text-primary border-top-0 border-bottom-0 border-left-0"><h5>Declaración Jurada de Residencia</h5>Septiembre 2020 20:20 hrs.</li>
+                  <li class="list-group-item text-primary border-top-0 border-bottom-0 border-left-0"><h6>Valor documento</h6>$7000</li>
+                  <li class="list-group-item text-primary border-0"><input type="checkbox" data-labelauty="Pendiente|Pagar" checked><button class="btn btn-outline-primary"><i class="fas fa-trash-alt px-2"></i></button></li>
+                </ul>
+              </div>
+          </section>
+
+        </div>
+
+        <div class="col-md-4">
+          <section class="card border-0 p-2 shadow-sm h-100 my-2" style="opacity: .8; background-color: #0953B4;">
+            <div class="card-body">
+              <h2 class="card-title pt-3 text-white">Total a pagar</h2>
+              <h2 class="card-title h2 text-white">$14.000</h2>
+              <form>
+              <input type="text" class="form-control mt-4 mb-3 w-75" placeholder="Ingresa código de descuento">
+              <span class="text-warning" aria-live="assertive"></span>
+            </form>
+            <button type="button" class="btn btn-light btn-lg mt-4" style="color: #0953B4;">Pagar y firmar</button>
+                
+            </div>
+
+        </section>
+
+      </div>
+
+
+
+
+    </main>
+</div>
+
+
+<script src="js/jquery-3.5.1.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+<script src="js/bootstrap.min.js"></script>
+<script src="js/jquery-labelauty.js"></script>
+<script>
+  $(document).ready(function(){
+    $(":checkbox").labelauty({ label: false });
+});
+</script>
+</body>
+</html>
